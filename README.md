@@ -5,4 +5,20 @@ Developed using the open-source conversational AI library [Rasa stack](https://r
 
 The chatbot is not an official TransLink product.
 
-... more details to follow.
+## Model Training and Testing
+
+A customized docker image is available for model training and testing
+
+`git clone https://github.com/moh-salah/transit_chatbot.git`
+
+- Use prebuilt image `bowenwen/rasa_chatbot_nb:latest` and start container using docker-compose, 
+`docker docker-compose up -d`
+
+- Optionally, you can build the docker image yourself, and run it
+`docker build -t "transit_chatbot" .`
+`docker run -p 8888:8888 -v /:/home/jovyan/transit_chatbot transit_chatbot`
+
+
+## Model Deployment
+
+More to come...
