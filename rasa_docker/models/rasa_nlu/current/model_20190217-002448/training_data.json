@@ -1,0 +1,2703 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "garbage",
+        "text": "what the heck!"
+      },
+      {
+        "intent": "garbage",
+        "text": "LOL :D"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks :)"
+      },
+      {
+        "intent": "goodbye",
+        "text": "farewell"
+      },
+      {
+        "intent": "goodbye",
+        "text": "have a good one"
+      },
+      {
+        "intent": "goodbye",
+        "text": "have a good day"
+      },
+      {
+        "intent": "search_trip",
+        "text": "plan my trip"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 11,
+            "end": 13,
+            "value": "99",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus number 99"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "99",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus 99"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 11,
+            "end": 12,
+            "value": "7",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus number 7"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "7",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus 7"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "7",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus 7"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "9",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus 9"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "180",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus 180"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "c23",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus c23"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "C23",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus C23"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "n09",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus n09"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "N9",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus N9"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "N12",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus N12"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "c07",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus c07"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "c45",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus c45"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "555",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus 555"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "555",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus #555"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "50234",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "stop number 50234"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "50234",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "stop 50234"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 5,
+            "end": 6,
+            "value": "8",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus #8"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 6,
+            "end": 7,
+            "value": "8",
+            "entity": "line_number"
+          }
+        ],
+        "text": "bus # 8"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "55555",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "stop #55555"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "30298",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "stop #30298"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "30566",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "stop #30566"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "30566",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "30566"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "50243",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "50243"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "20889",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "20889"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "77777",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "stop# 77777"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "40221",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "stop# 40221"
+      },
+      {
+        "intent": "thanks",
+        "text": "no thanks :("
+      },
+      {
+        "intent": "thanks",
+        "text": "no thanks :)"
+      },
+      {
+        "intent": "thanks",
+        "text": "no thanks!"
+      },
+      {
+        "intent": "thanks",
+        "text": "no, thanks"
+      },
+      {
+        "intent": "greet",
+        "text": "helo"
+      },
+      {
+        "intent": "garbage",
+        "text": "asdfkldafs %^ ljadsf ee3"
+      },
+      {
+        "intent": "garbage",
+        "text": "$jkasdfasd sadf ajkdasf"
+      },
+      {
+        "intent": "garbage",
+        "text": "wth"
+      },
+      {
+        "intent": "garbage",
+        "text": "oksksa dddd"
+      },
+      {
+        "intent": "garbage",
+        "text": "ppqmd fdf e"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 10,
+            "end": 24,
+            "value": "surrey central",
+            "entity": "location_start"
+          }
+        ],
+        "text": "lost near surrey central"
+      },
+      {
+        "intent": "search_trip",
+        "text": "I am lost! can you help me?"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "wehre is the bus?"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "buss"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there,"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "bus eta"
+      },
+      {
+        "intent": "garbage",
+        "text": "fail"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "busses"
+      },
+      {
+        "intent": "garbage",
+        "text": "buzz"
+      },
+      {
+        "intent": "garbage",
+        "text": "roots"
+      },
+      {
+        "intent": "garbage",
+        "text": "lopp"
+      },
+      {
+        "intent": "garbage",
+        "text": "blahblah"
+      },
+      {
+        "intent": "garbage",
+        "text": "lalala"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "how long will I wait for the bus?"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "waiting"
+      },
+      {
+        "intent": "garbage",
+        "text": "buzy"
+      },
+      {
+        "intent": "garbage",
+        "text": "bussy"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yep"
+      },
+      {
+        "intent": "affirm",
+        "text": "yeah"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "good bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "shut down"
+      },
+      {
+        "intent": "goodbye",
+        "text": "end"
+      },
+      {
+        "intent": "affirm",
+        "text": "indeed"
+      },
+      {
+        "intent": "affirm",
+        "text": "that's right"
+      },
+      {
+        "intent": "affirm",
+        "text": "ok"
+      },
+      {
+        "intent": "affirm",
+        "text": "great"
+      },
+      {
+        "intent": "affirm",
+        "text": "okay"
+      },
+      {
+        "intent": "greet",
+        "text": "hallo"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "helo"
+      },
+      {
+        "intent": "thanks",
+        "text": "thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "thank U"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "56243",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "when is the next bus at stop 56243?"
+      },
+      {
+        "intent": "thanks",
+        "text": "appreciate it"
+      },
+      {
+        "intent": "thanks",
+        "text": "appreciated"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 19,
+            "end": 29,
+            "value": "Waterfront",
+            "entity": "location_start"
+          },
+          {
+            "start": 33,
+            "end": 42,
+            "value": "Sapperton",
+            "entity": "location_end"
+          }
+        ],
+        "text": "how can I get from Waterfront to Sapperton?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 19,
+            "end": 37,
+            "value": "3456 Commercial Dr",
+            "entity": "location_start"
+          },
+          {
+            "start": 41,
+            "end": 56,
+            "value": "5643 Nanaimo St",
+            "entity": "location_end"
+          }
+        ],
+        "text": "how can I get from 3456 Commercial Dr to 5643 Nanaimo St?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 18,
+            "end": 34,
+            "value": "Lougheed station",
+            "entity": "location_start"
+          },
+          {
+            "start": 38,
+            "end": 56,
+            "value": "Waterfront station",
+            "entity": "location_end"
+          }
+        ],
+        "text": "How can I go from Lougheed station to Waterfront station now?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "Lougheed",
+            "entity": "location_end"
+          },
+          {
+            "start": 30,
+            "end": 40,
+            "value": "Waterfront",
+            "entity": "location_start"
+          }
+        ],
+        "text": "How can I go to Lougheed from Waterfront station now?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 16,
+            "end": 33,
+            "value": "granville@seymour",
+            "entity": "location_end"
+          }
+        ],
+        "text": "I need to go to granville@seymour?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 14,
+            "end": 35,
+            "value": "Superstore, Coquitlam",
+            "entity": "location_end"
+          },
+          {
+            "start": 41,
+            "end": 58,
+            "value": "4564 Lougheed hwy",
+            "entity": "location_start"
+          }
+        ],
+        "text": "I wanna go to Superstore, Coquitlam from 4564 Lougheed hwy?"
+      },
+      {
+        "intent": "garbage",
+        "text": "where is ian?"
+      },
+      {
+        "intent": "garbage",
+        "text": "Why is this so stupid?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 16,
+            "end": 25,
+            "value": "6756 Howe",
+            "entity": "location_end"
+          }
+        ],
+        "text": "I want to go to 6756 Howe"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "downtown",
+            "entity": "location_start"
+          },
+          {
+            "start": 30,
+            "end": 39,
+            "value": "coquitlam",
+            "entity": "location_end"
+          }
+        ],
+        "text": "How do we go from downtown to coquitlam?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 21,
+            "end": 30,
+            "value": "Kitsilano",
+            "entity": "location_start"
+          },
+          {
+            "start": 44,
+            "end": 55,
+            "value": "YVR airport",
+            "entity": "location_end"
+          }
+        ],
+        "text": "I need to leave from Kitsilano to go to the YVR airport?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "53192",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "I am at stop 53192, when is my next bus?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 21,
+            "end": 22,
+            "value": "2",
+            "entity": "line_number"
+          },
+          {
+            "start": 31,
+            "end": 36,
+            "value": "53192",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "I am waiting for the 2 at stop 53192, when is it coming?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "555",
+            "entity": "line_number"
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "value": "56436",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "when is the 555 arriving at 56436?"
+      },
+      {
+        "intent": "garbage",
+        "text": "you guys are all clowns"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 12,
+            "end": 23,
+            "value": "King George",
+            "entity": "location_start"
+          },
+          {
+            "start": 29,
+            "end": 36,
+            "value": "Lincoln",
+            "entity": "location_end"
+          }
+        ],
+        "text": "Can I go to King George from Lincoln?"
+      },
+      {
+        "intent": "garbage",
+        "text": "What is the matter with you?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 14,
+            "end": 28,
+            "value": "6745 Waybourne",
+            "entity": "location_end"
+          },
+          {
+            "start": 40,
+            "end": 52,
+            "value": "6738 Gilmore",
+            "entity": "location_start"
+          }
+        ],
+        "text": "How to get to 6745 Waybourne Drive from 6738 Gilmore?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 12,
+            "end": 27,
+            "value": "3452 Shawna Way",
+            "entity": "location_end"
+          },
+          {
+            "start": 5,
+            "end": 8,
+            "value": "VGH",
+            "entity": "location_start"
+          }
+        ],
+        "text": "from VGH to 3452 Shawna Way, please?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 17,
+            "end": 20,
+            "value": "555",
+            "entity": "line_number"
+          },
+          {
+            "start": 38,
+            "end": 43,
+            "value": "76543",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "when is the next 555 arriving at stop 76543?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "56473",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "I am at 56473, when is the bus here?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": "Kingsway",
+            "entity": "location_end"
+          }
+        ],
+        "text": "I need help to get to Kingsway."
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 27,
+            "end": 30,
+            "value": "YVR",
+            "entity": "location_end"
+          },
+          {
+            "start": 40,
+            "end": 48,
+            "value": "Yaletown",
+            "entity": "location_start"
+          }
+        ],
+        "text": "I am lost, I need to be at YVR, I am at Yaletown station."
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 20,
+            "end": 23,
+            "value": "PNE",
+            "entity": "location_start"
+          },
+          {
+            "start": 29,
+            "end": 48,
+            "value": "5647 Halifax street",
+            "entity": "location_end"
+          }
+        ],
+        "text": "We wanna get to the PNE from 5647 Halifax street"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 25,
+            "end": 28,
+            "value": "610",
+            "entity": "line_number"
+          },
+          {
+            "start": 37,
+            "end": 42,
+            "value": "78654",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "We are looking for bus # 610 at stop 78654."
+      },
+      {
+        "intent": "affirm",
+        "text": "works"
+      },
+      {
+        "intent": "goodbye",
+        "text": "byeee"
+      },
+      {
+        "intent": "goodbye",
+        "text": "later"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 26,
+            "end": 29,
+            "value": "006",
+            "entity": "line_number"
+          }
+        ],
+        "text": "my mum is waiting for the 006. when is the next bus arriving?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 17,
+            "end": 20,
+            "value": "180",
+            "entity": "line_number"
+          },
+          {
+            "start": 29,
+            "end": 34,
+            "value": "56453",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "when is the next 180 at stop 56453?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 45,
+            "end": 52,
+            "value": "Namaimo",
+            "entity": "location_end"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "value": "Burrad",
+            "entity": "location_start"
+          }
+        ],
+        "text": "I am lost at Burrad station, how do I get to Namaimo?"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi bebe"
+      },
+      {
+        "intent": "greet",
+        "text": "sup?"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "When is my bus coming?"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "How soon is my bus?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 17,
+            "end": 19,
+            "value": "99",
+            "entity": "line_number"
+          }
+        ],
+        "text": "When is the next 99?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "57382",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "When is the next bus at stop # 57382"
+      },
+      {
+        "intent": "affirm",
+        "text": "Great!"
+      },
+      {
+        "intent": "affirm",
+        "text": "Absolutely"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 17,
+            "end": 29,
+            "value": "Rogers Arena",
+            "entity": "location_start"
+          },
+          {
+            "start": 33,
+            "end": 43,
+            "value": "Waterfront",
+            "entity": "location_end"
+          }
+        ],
+        "text": "How do I go from Rogers Arena to Waterfront? "
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 16,
+            "end": 22,
+            "value": "surrey",
+            "entity": "location_end"
+          },
+          {
+            "start": 28,
+            "end": 46,
+            "value": "commercial station",
+            "entity": "location_start"
+          }
+        ],
+        "text": "how do I get to surrey from commercial station right now?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 24,
+            "end": 25,
+            "value": "3",
+            "entity": "line_number"
+          }
+        ],
+        "text": "What time will the next 3 bus arrive?"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello "
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 19,
+            "end": 20,
+            "value": "2",
+            "entity": "line_number"
+          }
+        ],
+        "text": "When does the next 2 bus leave downtown"
+      },
+      {
+        "intent": "garbage",
+        "text": "What is the meaning of life?"
+      },
+      {
+        "intent": "garbage",
+        "text": "Why am I stuck here?"
+      },
+      {
+        "intent": "garbage",
+        "text": "I want pizza"
+      },
+      {
+        "intent": "garbage",
+        "text": "give me love"
+      },
+      {
+        "intent": "garbage",
+        "text": "where is the gold?"
+      },
+      {
+        "intent": "garbage",
+        "text": "where is my money!"
+      },
+      {
+        "intent": "garbage",
+        "text": "I hate compass"
+      },
+      {
+        "intent": "garbage",
+        "text": "tell me a joke"
+      },
+      {
+        "intent": "garbage",
+        "text": "are you a man or a woman?"
+      },
+      {
+        "intent": "garbage",
+        "text": "how old are you?"
+      },
+      {
+        "intent": "garbage",
+        "text": "tell me a story"
+      },
+      {
+        "intent": "garbage",
+        "text": "I love you"
+      },
+      {
+        "intent": "garbage",
+        "text": "when is xmass"
+      },
+      {
+        "intent": "garbage",
+        "text": "I need vacation"
+      },
+      {
+        "intent": "garbage",
+        "text": "I hate to commute"
+      },
+      {
+        "intent": "garbage",
+        "text": "can I order chinese food?"
+      },
+      {
+        "intent": "garbage",
+        "text": "take me to the movies"
+      },
+      {
+        "intent": "garbage",
+        "text": "Where's Waldo?"
+      },
+      {
+        "intent": "garbage",
+        "text": "Who shot JFK?"
+      },
+      {
+        "intent": "garbage",
+        "text": "My mouth is filled with tide pods, is that dangerous?"
+      },
+      {
+        "intent": "garbage",
+        "text": "Can I drive the bus?"
+      },
+      {
+        "intent": "affirm",
+        "text": "I understand"
+      },
+      {
+        "intent": "affirm",
+        "text": "OK"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Bye!"
+      },
+      {
+        "intent": "garbage",
+        "text": "Will the bus give me diseases?"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "When is the bus coming"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "When is my stupid bus coming"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "When is my late bus coming"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "the bus is late! When is it coming?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 55,
+            "end": 60,
+            "value": "48291",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "When is the next bus heading downtown from stop number 48291"
+      },
+      {
+        "intent": "search_trip",
+        "text": "I need help with directions"
+      },
+      {
+        "intent": "search_trip",
+        "text": "can you give me directions?"
+      },
+      {
+        "intent": "search_trip",
+        "text": "can you plan my trip?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 13,
+            "end": 21,
+            "value": "downtown",
+            "entity": "location_end"
+          }
+        ],
+        "text": "how do I get downtown on transit?"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "city hll",
+            "entity": "location_end"
+          }
+        ],
+        "text": "How get to city hll?"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "when is the next bus heading to Canada Line?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "grnville",
+            "entity": "location_start"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "value": "main",
+            "entity": "location_end"
+          }
+        ],
+        "text": "how do I get from grnville to main"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "364",
+            "entity": "line_number"
+          },
+          {
+            "start": 34,
+            "end": 39,
+            "value": "94827",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "is there a 364 bus coming to stop 94827 in the next 5 mins?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 33,
+            "end": 38,
+            "value": "49239",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "When will there be a bus at stop 49239 going to UBC?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "49402",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "when does nxt bus arive stop# 49402"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 23,
+            "end": 25,
+            "value": "36",
+            "entity": "line_number"
+          }
+        ],
+        "text": "how many minutes until 36 bus comes?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 42,
+            "end": 47,
+            "value": "30921",
+            "entity": "stop_number"
+          },
+          {
+            "start": 23,
+            "end": 26,
+            "value": "473",
+            "entity": "line_number"
+          }
+        ],
+        "text": "how many minutes until 473 bus comes stop 30921"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "which is the first bus coming to burrard going south?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "39204",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "when is next bus at 39204 stop?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "30104",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "When is next bus coming 30104 "
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "328",
+            "entity": "line_number"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "value": "32029",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "get me next 328 bus arrival at stop 32029"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "98448",
+            "entity": "stop_number"
+          },
+          {
+            "start": 19,
+            "end": 20,
+            "value": "8",
+            "entity": "line_number"
+          }
+        ],
+        "text": "whens the next bus 8 coming at 98448"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 35,
+            "end": 37,
+            "value": "99",
+            "entity": "line_number"
+          }
+        ],
+        "text": "How long do i have to wait for the 99 to UBC?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 35,
+            "end": 37,
+            "value": "22",
+            "entity": "line_number"
+          }
+        ],
+        "text": "How long do i have to wait for the 22 to downtown?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 10,
+            "end": 12,
+            "value": "25",
+            "entity": "line_number"
+          }
+        ],
+        "text": "when does 25 bus lleave nanaimaso skytrain?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 15,
+            "end": 18,
+            "value": "483",
+            "entity": "line_number"
+          },
+          {
+            "start": 32,
+            "end": 37,
+            "value": "10928",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "whens the next 483 bus location 10928"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "99",
+            "entity": "line_number"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "20101",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "99 bus time for stop 20101 "
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 27,
+            "end": 35,
+            "value": "Richmond",
+            "entity": "location_start"
+          },
+          {
+            "start": 39,
+            "end": 49,
+            "value": "Port Moody",
+            "entity": "location_end"
+          }
+        ],
+        "text": "how do I take transit from Richmond to Port Moody?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "49281",
+            "entity": "stop_number"
+          },
+          {
+            "start": 31,
+            "end": 32,
+            "value": "9",
+            "entity": "line_number"
+          }
+        ],
+        "text": "Im at stop 49281, when is next 9 bus?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 35,
+            "end": 38,
+            "value": "736",
+            "entity": "line_number"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "value": "55516",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "I'm at stop 55516 when is the next 736 bus?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 19,
+            "end": 22,
+            "value": "482",
+            "entity": "line_number"
+          },
+          {
+            "start": 40,
+            "end": 45,
+            "value": "10201",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "what time will the 482 bus come to stop 10201"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 10,
+            "end": 12,
+            "value": "28",
+            "entity": "line_number"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "value": "19183",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "whensnext 28 bus at stop 19183"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 13,
+            "end": 14,
+            "value": "4",
+            "entity": "line_number"
+          }
+        ],
+        "text": "when is next 4 bus at commerical and 3rd bus stop "
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 35,
+            "end": 37,
+            "value": "84",
+            "entity": "line_number"
+          },
+          {
+            "start": 41,
+            "end": 46,
+            "value": "58378",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "how long do I have to wait for the 84 at 58378"
+      },
+      {
+        "intent": "garbage",
+        "text": "Who am I?"
+      },
+      {
+        "intent": "garbage",
+        "text": "Where are you?"
+      },
+      {
+        "intent": "garbage",
+        "text": "Who are you? "
+      },
+      {
+        "intent": "affirm",
+        "text": "affirmative"
+      },
+      {
+        "intent": "affirm",
+        "text": "cool"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 25,
+            "end": 33,
+            "value": "new west",
+            "entity": "location_start"
+          },
+          {
+            "start": 37,
+            "end": 41,
+            "value": "kits",
+            "entity": "location_end"
+          }
+        ],
+        "text": "wut transit goes between new west to kits?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 5,
+            "end": 6,
+            "value": "7",
+            "entity": "line_number"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "value": "29288",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "next 7 bus 29288"
+      },
+      {
+        "intent": "greet",
+        "text": "sup"
+      },
+      {
+        "intent": "greet",
+        "text": "Sup"
+      },
+      {
+        "intent": "greet",
+        "text": "Wassup"
+      },
+      {
+        "intent": "greet",
+        "text": "wassup"
+      },
+      {
+        "intent": "greet",
+        "text": "wazzup"
+      },
+      {
+        "intent": "greet",
+        "text": "Wazzup"
+      },
+      {
+        "intent": "greet",
+        "text": "Whats up"
+      },
+      {
+        "intent": "greet",
+        "text": "What's up"
+      },
+      {
+        "intent": "greet",
+        "text": "whats up"
+      },
+      {
+        "intent": "greet",
+        "text": "what's up"
+      },
+      {
+        "intent": "thanks",
+        "text": "tanks"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 9,
+            "end": 12,
+            "value": "128",
+            "entity": "line_number"
+          }
+        ],
+        "text": "where is 128"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 13,
+            "end": 16,
+            "value": "155",
+            "entity": "line_number"
+          }
+        ],
+        "text": "where is the 155"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 17,
+            "end": 20,
+            "value": "106",
+            "entity": "line_number"
+          }
+        ],
+        "text": "when is the next 106"
+      },
+      {
+        "intent": "thanks",
+        "text": "danke"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 18,
+            "end": 39,
+            "value": "920 Fifth st new west",
+            "entity": "location_start"
+          },
+          {
+            "start": 43,
+            "end": 51,
+            "value": "El Santo",
+            "entity": "location_end"
+          }
+        ],
+        "text": "how do I get from 920 Fifth st new west to El Santo"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "287 Nelsons Court",
+            "entity": "location_start"
+          },
+          {
+            "start": 21,
+            "end": 36,
+            "value": "Burrard Station",
+            "entity": "location_end"
+          }
+        ],
+        "text": "287 Nelsons Court to Burrard Station"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 18,
+            "end": 36,
+            "value": "461 Alberta street",
+            "entity": "location_start"
+          },
+          {
+            "start": 40,
+            "end": 65,
+            "value": "St Thomas More Collegiate",
+            "entity": "location_end"
+          }
+        ],
+        "text": "how do I get from 461 Alberta street to St Thomas More Collegiate by transit?"
+      },
+      {
+        "intent": "affirm",
+        "text": "I understand"
+      },
+      {
+        "intent": "affirm",
+        "text": "understood"
+      },
+      {
+        "intent": "affirm",
+        "text": "OK!"
+      },
+      {
+        "intent": "affirm",
+        "text": "k"
+      },
+      {
+        "intent": "affirm",
+        "text": "K"
+      },
+      {
+        "intent": "affirm",
+        "text": "Okay"
+      },
+      {
+        "intent": "affirm",
+        "text": "okay and thanks"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 24,
+            "end": 40,
+            "value": "coquitlam centre",
+            "entity": "location_start"
+          },
+          {
+            "start": 44,
+            "end": 56,
+            "value": "stanley park",
+            "entity": "location_end"
+          }
+        ],
+        "text": "can I take transit from coquitlam centre to stanley park"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 20,
+            "end": 32,
+            "value": "Stanley Park",
+            "entity": "location_end"
+          }
+        ],
+        "text": "How do I get to the Stanley Park train?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "101",
+            "entity": "line_number"
+          }
+        ],
+        "text": "Is there a 101 coming today?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 17,
+            "end": 30,
+            "value": "Roger's arena",
+            "entity": "location_end"
+          }
+        ],
+        "text": "I need to get to Roger's arena asap"
+      },
+      {
+        "intent": "garbage",
+        "text": "Why is the sky blue"
+      },
+      {
+        "intent": "garbage",
+        "text": "Is it going to rain today?"
+      },
+      {
+        "intent": "garbage",
+        "text": "Why isn't transit free?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 18,
+            "end": 36,
+            "value": "waterfront station",
+            "entity": "location_start"
+          },
+          {
+            "start": 40,
+            "end": 68,
+            "value": "horseshoe bay ferry terminal",
+            "entity": "location_end"
+          }
+        ],
+        "text": "I want to go from waterfront station to horseshoe bay ferry terminal"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 14,
+            "end": 15,
+            "value": "2",
+            "entity": "line_number"
+          }
+        ],
+        "text": "when does the 2 arrive?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "53444",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "is there a bus coming to stop 53444"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "53414",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "stop 53414"
+      },
+      {
+        "intent": "garbage",
+        "text": "why is my bus always late?"
+      },
+      {
+        "intent": "garbage",
+        "text": "translink sucks"
+      },
+      {
+        "intent": "garbage",
+        "text": "translink should be terminated"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 23,
+            "end": 40,
+            "value": "6th st at 6th ave",
+            "entity": "location_start"
+          }
+        ],
+        "text": "what bus do I catch at 6th st at 6th ave"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "Como Lake",
+            "entity": "location_start"
+          }
+        ],
+        "text": "Can I catch a bus near Como Lake?"
+      },
+      {
+        "intent": "garbage",
+        "text": "will the canucks win the cup?"
+      },
+      {
+        "intent": "garbage",
+        "text": "will the canucks ever win teh stanley cup"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "119",
+            "entity": "line_number"
+          }
+        ],
+        "text": "Is the 119 ever going to show up?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 33,
+            "end": 47,
+            "value": "Surrey Central",
+            "entity": "location_start"
+          },
+          {
+            "start": 51,
+            "end": 62,
+            "value": "SFU burnaby",
+            "entity": "location_end"
+          }
+        ],
+        "text": "What is the best way to get form Surrey Central to SFU burnaby"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 51,
+            "end": 62,
+            "value": "SFU Burnaby",
+            "entity": "location_end"
+          },
+          {
+            "start": 33,
+            "end": 47,
+            "value": "Pacific Centre",
+            "entity": "location_start"
+          }
+        ],
+        "text": "What is the best way to get from Pacific Centre to SFU Burnaby"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 24,
+            "end": 41,
+            "value": "Canada games pool",
+            "entity": "location_start"
+          }
+        ],
+        "text": "Can I take trasnit from Canada games pool?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 22,
+            "end": 42,
+            "value": "Lougheed Town Centre",
+            "entity": "location_end"
+          }
+        ],
+        "text": "Can I take transit to Lougheed Town Centre?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 22,
+            "end": 36,
+            "value": "Brentwood mall",
+            "entity": "location_end"
+          }
+        ],
+        "text": "Can I take transit ot Brentwood mall"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 24,
+            "end": 40,
+            "value": "Tsawwassen Ferry",
+            "entity": "location_start"
+          }
+        ],
+        "text": "can I take transit from Tsawwassen Ferry"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 20,
+            "end": 22,
+            "value": "22",
+            "entity": "line_number"
+          }
+        ],
+        "text": "I'm looking for the 22 bus"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "what routes stop here?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Metrotwon",
+            "entity": "location_start"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "value": "yvrr",
+            "entity": "location_end"
+          }
+        ],
+        "text": "Metrotwon to yvrr"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Metrotown",
+            "entity": "location_start"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "value": "VCC",
+            "entity": "location_end"
+          }
+        ],
+        "text": "Metrotown to VCC"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 5,
+            "end": 18,
+            "value": "920 Henley St",
+            "entity": "location_start"
+          },
+          {
+            "start": 22,
+            "end": 37,
+            "value": "Newport Village",
+            "entity": "location_end"
+          }
+        ],
+        "text": "from 920 Henley St to Newport Village"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 4,
+            "end": 26,
+            "value": "Centennial High School",
+            "entity": "location_start"
+          },
+          {
+            "start": 30,
+            "end": 42,
+            "value": "New West Stn",
+            "entity": "location_end"
+          }
+        ],
+        "text": "frm Centennial High School ot New West Stn"
+      },
+      {
+        "intent": "affirm",
+        "text": "that makes sense"
+      },
+      {
+        "intent": "affirm",
+        "text": "makes sense"
+      },
+      {
+        "intent": "goodbye",
+        "text": "ttyl"
+      },
+      {
+        "intent": "goodbye",
+        "text": "take care"
+      },
+      {
+        "intent": "greet",
+        "text": "yo"
+      },
+      {
+        "intent": "greet",
+        "text": "sup yo"
+      },
+      {
+        "intent": "garbage",
+        "text": "I'm thirsty"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "where is the bus"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 13,
+            "end": 26,
+            "value": "Roger's Arena",
+            "entity": "location_end"
+          }
+        ],
+        "text": "can I get to Roger's Arena?"
+      },
+      {
+        "intent": "greet",
+        "text": "Allo"
+      },
+      {
+        "intent": "thanks",
+        "text": "Merci"
+      },
+      {
+        "intent": "greet",
+        "text": "ca va?"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "Ou est l'autobus"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 16,
+            "end": 26,
+            "value": "Waterfront",
+            "entity": "location_end"
+          }
+        ],
+        "text": "How do I get to Waterfront"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "next bus?"
+      },
+      {
+        "intent": "goodbye",
+        "text": "over"
+      },
+      {
+        "intent": "goodbye",
+        "text": "talk to you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "CU"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you!"
+      },
+      {
+        "intent": "goodbye",
+        "text": "CU!"
+      },
+      {
+        "intent": "goodbye",
+        "text": "out"
+      },
+      {
+        "intent": "goodbye",
+        "text": "end"
+      },
+      {
+        "intent": "goodbye",
+        "text": "exit"
+      },
+      {
+        "intent": "thanks",
+        "text": "Many thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "thank you very much"
+      },
+      {
+        "intent": "thanks",
+        "text": "thank you very much!"
+      },
+      {
+        "intent": "thanks",
+        "text": "awesome thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you!"
+      },
+      {
+        "intent": "thanks",
+        "text": "many thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "Many thanks!"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 26,
+            "end": 29,
+            "value": "SFU",
+            "entity": "location_end"
+          }
+        ],
+        "text": "I need to go from here to SFU"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "SFU",
+            "entity": "location_start"
+          }
+        ],
+        "text": "I am at SFU and want to take the bus"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "25362",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "When is the next bus to stop 25362?"
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "25326",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "I need a bus at 25326 asap! "
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "When is my bus coming?"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "where is my bus?"
+      },
+      {
+        "intent": "thanks",
+        "text": "thx"
+      },
+      {
+        "intent": "thanks",
+        "text": "thanks very much"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good day"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Have a good day"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Have a good day!"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Have a great day!"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Have a great day"
+      },
+      {
+        "intent": "search_bus_time",
+        "text": "I am looking for a bus "
+      },
+      {
+        "intent": "search_bus_time",
+        "entities": [
+          {
+            "start": 16,
+            "end": 19,
+            "value": "123",
+            "entity": "line_number"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "value": "45213",
+            "entity": "stop_number"
+          }
+        ],
+        "text": "looking for bus 123 at 45213"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 11,
+            "end": 21,
+            "value": "grandville",
+            "entity": "location_start"
+          },
+          {
+            "start": 25,
+            "end": 35,
+            "value": "commercial",
+            "entity": "location_end"
+          }
+        ],
+        "text": "search for grandville to commercial?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 18,
+            "end": 30,
+            "value": "sfu, burnaby",
+            "entity": "location_start"
+          },
+          {
+            "start": 34,
+            "end": 37,
+            "value": "ubc",
+            "entity": "location_end"
+          }
+        ],
+        "text": "how can I go from sfu, burnaby to ubc?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 18,
+            "end": 21,
+            "value": "sfu",
+            "entity": "location_start"
+          },
+          {
+            "start": 25,
+            "end": 28,
+            "value": "ubc",
+            "entity": "location_end"
+          }
+        ],
+        "text": "how can I go from sfu to ubc?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 18,
+            "end": 21,
+            "value": "sfu",
+            "entity": "location_start"
+          },
+          {
+            "start": 25,
+            "end": 28,
+            "value": "ubc",
+            "entity": "location_end"
+          }
+        ],
+        "text": "how can I go from sfu to ubc?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 18,
+            "end": 21,
+            "value": "ubc",
+            "entity": "location_start"
+          },
+          {
+            "start": 25,
+            "end": 28,
+            "value": "sfu",
+            "entity": "location_end"
+          }
+        ],
+        "text": "how can I go from ubc to sfu?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 19,
+            "end": 31,
+            "value": "stanley park",
+            "entity": "location_end"
+          },
+          {
+            "start": 37,
+            "end": 49,
+            "value": "T&T on abott",
+            "entity": "location_start"
+          }
+        ],
+        "text": "i wanna go from to stanley park from T&T on abott?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 24,
+            "end": 43,
+            "value": "starbucks on robson",
+            "entity": "location_start"
+          },
+          {
+            "start": 47,
+            "end": 59,
+            "value": "rogers arena",
+            "entity": "location_end"
+          }
+        ],
+        "text": "show me directions from starbucks on robson to rogers arena?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 16,
+            "end": 34,
+            "value": "43 king george ave",
+            "entity": "location_end"
+          }
+        ],
+        "text": "how can I go to 43 king george ave?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 24,
+            "end": 37,
+            "value": "1087 west 4th",
+            "entity": "location_start"
+          },
+          {
+            "start": 41,
+            "end": 57,
+            "value": "16th and 106 ave",
+            "entity": "location_end"
+          }
+        ],
+        "text": "show me directions from 1087 west 4th to 16th and 106 ave?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 30,
+            "end": 38,
+            "value": "190 SFPR",
+            "entity": "location_end"
+          },
+          {
+            "start": 44,
+            "end": 61,
+            "value": "hastings and main",
+            "entity": "location_start"
+          }
+        ],
+        "text": "what is the best way to go to 190 SFPR from hastings and main?"
+      },
+      {
+        "intent": "search_trip",
+        "entities": [
+          {
+            "start": 29,
+            "end": 46,
+            "value": "800 griffiths way",
+            "entity": "location_start"
+          },
+          {
+            "start": 50,
+            "end": 69,
+            "value": "broadway and cambie",
+            "entity": "location_end"
+          }
+        ],
+        "text": "what are the directions from 800 griffiths way to broadway and cambie?"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

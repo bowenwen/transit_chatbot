@@ -1,25 +1,30 @@
-version:  '3'
+version:  '3.0'
 
 services:
-    tcb_trainer:
+    rasa_notebook:
         image: bowenwen/rasa_chatbot_nb:latest
-        restart: always
+        networks: ['rasa-network']
+        ports:
+            - "8888:8888"
         volumes: # set your own {$PWD}
-            - /:/home/jovyan/transit_chatbot
+            - ./:/home/jovyan/work
         user: root
         environment:
             - GRANT_SUDO=yes 
             - NB_UID=1000
-        container_name:   transit_chatbot_trainer
-        command: jupyter notebook --allow-root --ip=0.0.0.0 --no-browser --notebook-dir=/home/jovyan/transit_chatbot --NotebookApp.password='sha1:8f3d668b74ed:9ec0b85bb0b353d733115ce17c7ae00a51d6518d'
+        command: jupyter notebook --allow-root --ip=0.0.0.0 --no-browser --notebook-dir=/home/jovyan/work --NotebookApp.password='sha1:8f3d668b74ed:9ec0b85bb0b353d733115ce17c7ae00a51d6518d'
         # default password: admintest
-        networks:
-            - tcb
+        container_name: rasa_notebook
+        
+    action_server:
+        image: bowenwen/rasa_chatbot_nb:latest
+        networks: ['rasa-network']
         ports:
-            - 8888:8888
-        # unassigned ports: 49152 to 65535
-            
-networks:
-  tcb:
-    driver: bridge
+            - "5055:5055"
+        volumes:
+            - ./:/home/jovyan/work
+        command: python -m rasa_core_sdk.endpoint --actions actions
+        container_name: action_server
+
+networks: {rasa-network: {driver: bridge}}
             

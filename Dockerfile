@@ -15,8 +15,8 @@ RUN pip install --upgrade pip
 
 # Install additional python packages
 RUN pip install --user \
-    rasa_core==0.9.6 \
-    rasa_nlu==0.13.7 \
+    rasa_core==0.12.3 \
+    rasa_nlu==0.13.8 \
 	sklearn-crfsuite==0.3.6 \
     spacy==2.0.18
 
@@ -33,8 +33,7 @@ USER root
 ENV TZ=America/Vancouver
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-EXPOSE 8888
-WORKDIR $HOME
+WORKDIR $HOME/work
 
 # Configure container startup
 ENTRYPOINT ["tini", "-g", "--"]

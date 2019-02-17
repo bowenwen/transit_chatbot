@@ -1,0 +1,49 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "line_number",
+        "location_end",
+        "stop_number",
+        "location_start"
+      ]
+    },
+    "utter_thanks": {
+      "slots": []
+    },
+    "utter_affirm": {
+      "slots": []
+    },
+    "utter_goodbye": {
+      "slots": []
+    },
+    "utter_garbage": {
+      "slots": [
+        "location_end",
+        "location_start"
+      ]
+    },
+    "action_next_bus": {
+      "slots": []
+    },
+    "action_trip": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.12.3",
+  "python": "3.6.7",
+  "max_histories": [
+    5,
+    null,
+    5,
+    2
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy",
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.form_policy.FormPolicy"
+  ],
+  "trained_at": "20190217-000134"
+}

@@ -1,0 +1,111 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_goodbye
+- utter_thanks
+- utter_garbage
+- utter_affirm
+- utter_ask_line_number
+- utter_ask_stop_number
+- utter_ask_location_start
+- utter_ask_location_end
+- action_next_bus
+- action_trip
+config:
+  store_entities_as_slots: true
+entities:
+- line_number
+- stop_number
+- location_start
+- location_end
+forms: []
+intents:
+- greet:
+    use_entities: true
+- affirm:
+    use_entities: true
+- thanks:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- search_bus_time:
+    use_entities: true
+- search_trip:
+    use_entities: true
+- garbage:
+    use_entities: true
+slots:
+  line_number:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  location_end:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  location_start:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  stop_number:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_affirm:
+  - text: Great!
+  - text: Awesome!
+  - text: Perfect!
+  utter_ask_line_number:
+  - text: "Sure, what is the bus number? For example, you can say: 'Bus number 8'"
+  - text: "I need the bus number. For example, you can say: 'Bus number 8'"
+  - text: "Which bus line do you plan on taking? For example, you can say: 'Bus number\
+      \ 8'"
+  utter_ask_location_end:
+  - text: Sure, what is the address of your destination?
+  - text: I can help you with that! I just need the location or address of where you're
+      going.
+  - text: To which destination?
+  utter_ask_location_start:
+  - text: Sure, what is the start address?
+  - text: I can help you with that! I just need to know where you're trip is starting
+      from.
+  - text: I can help you with that! I need the starting address.
+  utter_ask_stop_number:
+  - text: "Sure, what is the stop number? For example, you can say: 'Stop number 50234'"
+  - text: "I can help you with that! I need the stop number. For example, you can\
+      \ say: 'Stop number 50234'"
+  - text: "Which stop number? For example, you can say: 'Stop number 50234'"
+  utter_garbage:
+  - text: I am not sure what you are aiming for. Please give me more specific information
+      such as the stop number and the bus line or the origin and destination for your
+      trip.
+  - text: Huh, come again?! Please give me more specific information such as the stop
+      number and the bus line or the origin and destination for your trip.
+  - text: Hmm ... not sure what you're asking? Please provide more specific information
+      such as the stop number and the bus line or the origin and destination for your
+      trip.
+  - text: Hmm ... I am still learning! Can you rephrase that please? It's easier for
+      me if you give me specific information such as the stop number and the bus line
+      or the origin and destination for your trip.
+  - text: What do you mean? It'd be easier for me if you included specific information
+      such as the stop number and the bus line or the origin and destination for your
+      trip.
+  - text: Well .. it depends! Can you be more specific? Please provide me with the
+      stop number and the bus line or the origin and destination for your trip.
+  utter_goodbye:
+  - text: Bye
+  - text: See you soon!
+  - text: Goodbye!
+  - text: Safe trip!
+  - text: Happy travelling!
+  utter_greet:
+  - text: Hey! How can help you?
+  - text: Hello! How can help you?
+  - text: Hi, traveller! How can help you?
+  - text: Greetings, welcome to the future! How can help you?
+  utter_thanks:
+  - text: You are very welcome!
+  - text: Anytime!
+  - text: My pleasure!
