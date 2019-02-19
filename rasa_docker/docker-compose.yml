@@ -3,6 +3,7 @@ version: '3.0'
 services:
   rasa_core:
     image: rasa/rasa_core:0.12.3
+    container_name: rasa_core
     ports:
       - 5005:5005
     volumes:
@@ -12,14 +13,19 @@ services:
       - start
       - --core
       - models
-      - -c
-      - rest
-      - --endpoints
+      - -p 5005
+#      - -c
+#      - rest  
+      - --enable_api
+      - --endpoints 
       - config/endpoints.yml
+      - --credentials
+      - config/credentials.yml
       - -u
       - current/
   rasa_nlu:
     image: rasa/rasa_nlu:0.13.8-spacy
+    container_name: rasa_nlu
     volumes:
       - ./models/rasa_nlu:/app/models
     command:
@@ -28,5 +34,7 @@ services:
       - models
   action_server:
     image: bowenwen/rasa_core_sdk:0.12.1 #rasa/rasa_core_sdk:0.12.1
+    container_name: action_server
     volumes:
       - ./actions:/app/actions
+      - ./keys:/app/keys

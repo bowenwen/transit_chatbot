@@ -6,13 +6,13 @@ Developed using the open-source conversational AI library [Rasa stack](https://r
 The chatbot is not an official TransLink product.
 
 
-## Getting started: testing in Jupyter with docker
+## Getting started: test chatbot in Jupyter with docker
 
 ### Get a copy on your local
 
 `git clone https://github.com/moh-salah/transit_chatbot.git`
 
-### Use prebuilt image to start container using docker-compose
+### Start container
 
 `docker-compose up`
 
@@ -20,7 +20,9 @@ The chatbot is not an official TransLink product.
 
 *You can check the status of the rasa action server on: `http://localhost:5055/`.*
 
-### To cleanup the docker containers
+*You can test the pre-trained chatbot in the terminal within the docker container environment: `python -m rasa_core.run -d models/dialogue -u models/nlu/default/current --endpoints endpoints.yml --debug`*
+
+### Cleanup containers
 
 `docker-compose down`
 
@@ -32,6 +34,7 @@ Deploying trained chatbot is easy with rasa prebuilt images
 ### Get a copy on your local
 
 `git clone https://github.com/moh-salah/transit_chatbot.git`
+
 `cd rasa_docker`
 
 ### Retrain the model with Rasa Docker (Optional)
@@ -39,13 +42,13 @@ Deploying trained chatbot is easy with rasa prebuilt images
 #### Train rasa core
 
 `
-docker run -v $pwd/:/app/project -v $pwd/models/rasa_core:/app/models rasa/rasa_core:0.12.3 train --domain project/domain.yml --stories project/data/stories.md --out models
+docker run -v $pwd/:/app/project -v $pwd/models/rasa_core:/app/models rasa/rasa_core:0.12.3 train --domain project/domain.yml --stories project/data/stories.md --config project/policy_config.yml --out models
 `
 
 #### Train rasa nlu
 
 `
-docker run -v $pwd/:/app/project -v $pwd/models/rasa_nlu:/app/models rasa/rasa_nlu:0.13.8-spacy run python -m rasa_nlu.train -c config.yml -d project/data/data.json -o models --project current
+docker run -v $pwd/:/app/project -v $pwd/models/rasa_nlu:/app/models rasa/rasa_nlu:0.13.8-spacy run python -m rasa_nlu.train -c project/config.yml -d project/data/data.json -o models --project current
 `
 
 ### Build a custome Rasa action image (Optional)
@@ -54,17 +57,20 @@ docker run -v $pwd/:/app/project -v $pwd/models/rasa_nlu:/app/models rasa/rasa_n
 docker build --tag my_action_image .
 `
 
-*If you decide to build your own, please modify the docker-compose file accordingly.*
+*If you decide to build your own image, please modify the docker-compose file accordingly.*
 
-### start chatbot service
+### Start chatbot services
 
 `
 docker-compose up -d
 `
 
-*You need to set up your own chatbot services and configure connectors, read more about connectors [here](https://rasa.com/docs/core/0.13.2/connectors/).*
+*You need to set up your own chatbot platform connectors with relevant credentials, read more about connectors [here](https://rasa.com/docs/core/0.13.2/connectors/).*
 
-### To cleanup the docker containers
+*While you are configuring your connectors, you might want to use a tunnel service if you are not configuring on a server or cloud service with public domain. [ngnork](https://dashboard.ngrok.com/get-started) offers free tunnel service.*
+
+
+### Cleanup containers
 
 `docker-compose down`
 

@@ -3,13 +3,10 @@
     "action_listen": {
       "slots": [
         "line_number",
+        "location_start",
         "location_end",
-        "stop_number",
-        "location_start"
+        "stop_number"
       ]
-    },
-    "utter_thanks": {
-      "slots": []
     },
     "utter_affirm": {
       "slots": []
@@ -17,23 +14,26 @@
     "utter_goodbye": {
       "slots": []
     },
-    "utter_garbage": {
-      "slots": [
-        "location_end",
-        "location_start"
-      ]
-    },
-    "action_next_bus": {
+    "utter_thanks": {
       "slots": []
     },
+    "utter_garbage": {
+      "slots": [
+        "location_start",
+        "location_end"
+      ]
+    },
     "action_trip": {
+      "slots": []
+    },
+    "action_next_bus": {
       "slots": []
     }
   },
   "rasa_core": "0.12.3",
   "python": "3.6.7",
   "max_histories": [
-    5,
+    2,
     null,
     5,
     2
@@ -45,5 +45,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190217-000134"
+  "trained_at": "20190218-071454"
 }
